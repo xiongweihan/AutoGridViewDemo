@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_glidview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:paddingStart="7dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="7dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/iv_item_passport"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription=""
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_success_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="7sp"
+        android:textColor="#333"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_passport"
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_passport"
+        app:layout_constraintRight_toRightOf="@id/iv_item_passport"
+        app:layout_constraintTop_toTopOf="@id/iv_item_passport"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintVertical_bias="0.6"/>
+
+    <TextView
+        android:id="@+id/tv_title_item_passport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#2D2D2F"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_passport"
+        app:layout_constraintRight_toRightOf="@id/iv_item_passport"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_passport"
+        tools:text="3个月新车安全检查" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_item_passport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/color_515151"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_passport"
+        app:layout_constraintRight_toRightOf="@id/iv_item_passport"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_item_passport"
+        tools:ignore="HardcodedText"
+        tools:text="（3000公里）" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
